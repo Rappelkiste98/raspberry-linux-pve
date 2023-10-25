@@ -1,0 +1,11 @@
+prefix=/home/niklas/rootfs/usr
+exec_prefix=/home/niklas/rootfs/usr
+libdir=/home/niklas/rootfs/usr/lib
+includedir=/home/niklas/rootfs/usr/include
+
+Name: fdisk
+Description: fdisk library
+Version: 2.39.0
+Requires.private: uuid blkid
+Cflags: -I${includedir}/libfdisk
+Libs: -L${libdir} -lfdisk
