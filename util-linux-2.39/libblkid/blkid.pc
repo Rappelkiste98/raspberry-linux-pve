@@ -1,0 +1,10 @@
+prefix=/home/niklas/rootfs/usr
+exec_prefix=/home/niklas/rootfs/usr
+libdir=/home/niklas/rootfs/usr/lib
+includedir=/home/niklas/rootfs/usr/include
+
+Name: blkid
+Description: Block device id library
+Version: 2.39.0
+Cflags: -I${includedir}/blkid
+Libs: -L${libdir} -lblkid
