@@ -14,3 +14,9 @@
 	path = zlib
 	url = https://github.com/madler/zlib.git
 	branch = master
+[submodule "openssl"]
+	path = openssl
+	url = https://github.com/openssl/openssl.git
+[submodule "curl"]
+	path = curl
+	url = https://github.com/curl/curl.git
