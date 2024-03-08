@@ -4,9 +4,6 @@
 [submodule "util-linux"]
 	path = util-linux
 	url = https://github.com/util-linux/util-linux.git
-[submodule "zlib"]
-	path = zlib
-	url = https://github.com/madler/zlib.git
 [submodule "zfs"]
 	path = zfs
 	url = https://github.com/openzfs/zfs.git
