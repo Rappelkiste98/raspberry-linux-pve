@@ -10,3 +10,7 @@
 [submodule "raspberry-pve-linux"]
 	path = raspberry-pve-linux
 	url = https://github.com/Rappelkiste98/raspberry-pve-linux.git
+[submodule "zlib"]
+	path = zlib
+	url = https://github.com/madler/zlib.git
+	branch = master
