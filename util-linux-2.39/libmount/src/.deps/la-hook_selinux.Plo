@@ -1,4 +1,0 @@
-libmount/src/la-hook_selinux.lo: libmount/src/hook_selinux.c \
- /usr/aarch64-linux-gnu/include/stdc-predef.h config.h
-/usr/aarch64-linux-gnu/include/stdc-predef.h:
-config.h:
