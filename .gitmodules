@@ -4,6 +4,26 @@
 [submodule "util-linux"]
 	path = util-linux
 	url = https://github.com/util-linux/util-linux.git
+[submodule "zfs"]
+	path = zfs
+	url = https://github.com/openzfs/zfs.git
+[submodule "raspberry-pve-linux"]
+	path = raspberry-pve-linux
+	url = https://github.com/Rappelkiste98/raspberry-pve-linux.git
 [submodule "zlib"]
 	path = zlib
 	url = https://github.com/madler/zlib.git
+	branch = master
+[submodule "openssl"]
+	path = openssl
+	url = https://github.com/openssl/openssl.git
+[submodule "curl"]
+	path = curl
+	url = https://github.com/curl/curl.git
+[submodule "linux"]
+	path = linux
+	url = https://github.com/raspberrypi/linux.git
+	branch = rpi-6.1.y
+[submodule "raspberry-linux"]
+	path = raspberry-linux
+	url = https://github.com/raspberrypi/linux.git
