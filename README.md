@@ -13,9 +13,9 @@ You can use this pre-build Linux Kernel for better compatibility with Proxmox wi
 ## Features
 
 - RamDisk Boot
-- KSM Kernel Support
 - OpenZFS Support
-
+- KSM Kernel Support
+- VLAN Filtering
 
 ## Installation
 
