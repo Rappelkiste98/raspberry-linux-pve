@@ -22,17 +22,17 @@ You can use this pre-build Linux Kernel for better compatibility with Proxmox wi
 
 Download the newest Kernel Version ([6.1.*](https://github.com/Rappelkiste98/pve-raspbian/tree/6.1.y))
 ```bash
-wget -q --show-progress https://github.com/Rappelkiste98/pve-raspbian/releases/download/6.1.73/linux-headers-6.1.73-v8-pve+-1_arm64.deb &&
-wget -q --show-progress https://github.com/Rappelkiste98/pve-raspbian/releases/download/6.1.73/linux-image-6.1.73-v8-pve+-1_arm64.deb
+wget -q --show-progress https://github.com/Rappelkiste98/pve-raspbian/releases/download/6.1.73/linux-headers-6.1.73-v8-pve+-2_arm64.deb &&
+wget -q --show-progress https://github.com/Rappelkiste98/pve-raspbian/releases/download/6.1.73/linux-image-6.1.73-v8-pve+-2_arm64.deb
 ```
 Install new Kernel Image
 ```bash
-sudo apt install $PWD/linux-image-6.1.73-v8-pve+-1_arm64.deb
+sudo apt install $PWD/linux-image-6.1.73-v8-pve+-2_arm64.deb
 ```
 
 Install new Kernel Headers
 ```bash
-sudo apt install $PWD/linux-headers-6.1.73-v8-pve+-1_arm64.deb
+sudo apt install $PWD/linux-headers-6.1.73-v8-pve+-2_arm64.deb
 ```
 
 Configure new Bootloader settings for installed Kernel
