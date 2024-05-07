@@ -7,6 +7,7 @@ echo "\n============================ ! Prepare System APT ! ====================
 
 sudo dpkg --add-architecture arm64
 sudo dpkg --print-foreign-architectures
+sudo apt update
 
 sudo apt install git bc bison flex libssl-dev make libc6-dev libncurses5-dev crossbuild-essential-arm64 -y
 sudo apt install zlib1g-dev:arm64 libblkid-dev:arm64 uuid-dev:arm64 libtirpc-dev:arm64 libudev-dev:arm64 libcrypt-dev:arm64 libssl-dev:arm64 libaio-dev:arm64 libattr1-dev:arm64 libelf-dev:arm64 libffi-dev:arm64 libcurl4-openssl-dev:arm64 libtool-bin -y
