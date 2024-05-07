@@ -1,7 +1,8 @@
 [submodule "zfs"]
 	path = zfs
 	url = https://github.com/openzfs/zfs.git
+	branch = master
 [submodule "linux"]
 	path = linux
 	url = https://github.com/raspberrypi/linux.git
-	branch = rpi-6.1.y
+	branch = rpi-6.6.y
