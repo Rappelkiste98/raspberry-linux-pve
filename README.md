@@ -20,32 +20,32 @@ You can use this pre-build Linux Kernel for better compatibility with Proxmox wi
 
 ## Installation
 
-Download the newest Kernel Version ([6.1.*](https://github.com/Rappelkiste98/pve-raspbian/tree/6.1.y))
+Download the newest Kernel Version ([6.6.*](https://github.com/Rappelkiste98/raspberry-linux-pve/tree/6.6.y))
 ```bash
-wget -q --show-progress https://github.com/Rappelkiste98/pve-raspbian/releases/download/6.1.73/linux-headers-6.1.73-v8-pve+-2_arm64.deb &&
-wget -q --show-progress https://github.com/Rappelkiste98/pve-raspbian/releases/download/6.1.73/linux-image-6.1.73-v8-pve+-2_arm64.deb
+wget -q --show-progress https://github.com/Rappelkiste98/pve-raspbian/releases/download/6.1.73/linux-headers-6.6.30-v8-pve+-1_arm64.deb &&
+wget -q --show-progress https://github.com/Rappelkiste98/pve-raspbian/releases/download/6.1.73/linux-image-6.6.30-v8-pve+-1_arm64.deb
 ```
 Install new Kernel Image
 ```bash
-sudo apt install $PWD/linux-image-6.1.73-v8-pve+-2_arm64.deb
+sudo apt install $PWD/linux-image-6.6.30-v8-pve+-1_arm64.deb
 ```
 
 Install new Kernel Headers
 ```bash
-sudo apt install $PWD/linux-headers-6.1.73-v8-pve+-2_arm64.deb
+sudo apt install $PWD/linux-headers-6.6.30-v8-pve+-1_arm64.deb
 ```
 
 Configure new Bootloader settings for installed Kernel
 ```bash
-mv /boot/vmlinuz-6.1.73-v8-pve+ /boot/firmware/
-mv /boot/initrd.img-6.1.73-v8-pve+ /boot/firmware/
+mv /boot/vmlinuz-6.6.30-v8-pve+ /boot/firmware/
+mv /boot/initrd.img-6.6.30-v8-pve+ /boot/firmware/
 
 sudo nano /boot/firmware/config.txt
 
 At File End add this Lines:
 [pi4]
-kernel=vmlinuz-6.1.73-v8-pve+
-initramfs initrd.img-6.1.73-v8-pve+ followkernel
+kernel=vmlinuz-6.6.30-v8-pve+
+initramfs initrd.img-6.6.30-v8-pve+ followkernel
 ```
 
 Configure old Bootloader settings for installed Kernel
@@ -54,8 +54,8 @@ sudo nano /boot/config.txt
 
 At File End add this Lines:
 [pi4]
-kernel=vmlinuz-6.1.73-v8-pve+
-initramfs initrd.img-6.1.73-v8-pve+ followkernel
+kernel=vmlinuz-6.6.30-v8-pve+
+initramfs initrd.img-6.6.30-v8-pve+ followkernel
 ```
 
 Hold official RaspberryPi Kernel APT Packages (APT doesn't upgrade this Packages after this Settings)
@@ -65,7 +65,7 @@ sudo apt-mark hold raspberrypi-kernel raspberrypi-kernel-headers
 
 Reboot your RaspberryPi and Check used Kernel
 ```bash
-uname -r => 6.1.73-v8-pve+
+uname -r => 6.6.30-v8-pve+
 ```
 ## FAQ
 
