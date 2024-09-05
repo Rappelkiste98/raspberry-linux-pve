@@ -14,7 +14,7 @@ git pull
 echo "\n============================ ! Update Submodule 'linux' ! ============================\n"
 git submodule update --depth 1
 
-cd ./linux && git fetch --all --tags --depth 1
+cd $work_dir/linux && git fetch --all --tags --depth 1
 git reset --hard && git clean -d -f
 
 read -p "Enter newest 'linux' Branch: " linux_branch
@@ -28,7 +28,7 @@ git reset --hard && git clean -d -f
 echo "\n============================ ! Update Submodule 'linux' ! ============================\n"
 git submodule update --depth 1
 
-cd ../zfs && git fetch --all --tags --depth 1
+cd $work_dir/zfs && git fetch --all --tags --depth 1
 git reset --hard && git clean -d -f
 
 git checkout master && git pull -f
@@ -37,7 +37,7 @@ read -p "Enter newest 'zfs' Tag: " zfs_tag
 git checkout tags/$zfs_tag
 git reset --hard && git clean -d -f
 
-cd ..
+cd $work_dir/
 while true; do
         read -p "Do you wish to commit the Update? (y/n) " yn
         case $yn in
