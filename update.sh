@@ -12,6 +12,7 @@ git pull
 
 # Update Submodule RaspberryPi Linux
 echo "\n============================ ! Update Submodule 'linux' ! ============================\n"
+git submodule init
 git submodule update --depth 1
 
 cd $work_dir/linux && git fetch --all --tags --depth 1
@@ -26,6 +27,7 @@ git reset --hard && git clean -d -f
 
 # Update Submodule OpenZFS
 echo "\n============================ ! Update Submodule 'linux' ! ============================\n"
+git submodule init
 git submodule update --depth 1
 
 cd $work_dir/zfs && git fetch --all --tags --depth 1
