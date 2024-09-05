@@ -19,7 +19,7 @@ cd $work_dir/linux && git fetch --all --tags --depth 1
 git reset --hard && git clean -d -f
 
 read -p "Enter newest 'linux' Branch: " linux_branch
-git checkout $linux_branch && git pull -f
+git checkout $linux_branch && git pull -f --depth 1
 
 read -p "Enter newest 'linux' Tag: " linux_tag
 git checkout tags/$linux_tag
@@ -33,7 +33,7 @@ git submodule update --depth 1
 cd $work_dir/zfs && git fetch --all --tags --depth 1
 git reset --hard && git clean -d -f
 
-git checkout master && git pull -f
+git checkout master && git pull -f --depth 1
 
 read -p "Enter newest 'zfs' Tag: " zfs_tag
 git checkout tags/$zfs_tag
