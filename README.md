@@ -46,7 +46,7 @@ mv /boot/initrd.img-6.12.34-pve+ /boot/firmware/
 sudo nano /boot/firmware/config.txt
 
 At File End add this Lines:
-[pi4]
+[all]
 kernel=vmlinuz-6.12.34-v8-pve+
 initramfs initrd.img-6.12.34-pve+ followkernel
 ```
@@ -56,7 +56,7 @@ Configure old Bootloader settings for installed Kernel
 sudo nano /boot/config.txt
 
 At File End add this Lines:
-[pi4]
+[all]
 kernel=vmlinuz-6.12.34-v8-pve+
 initramfs initrd.img-6.12.34-pve+ followkernel
 ```
